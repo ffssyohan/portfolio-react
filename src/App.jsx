@@ -26,13 +26,13 @@ function App() {
     <div className="App">
       {/* header section */}
       <header className="header">
-        <h1>{fullName}</h1>
-        <p>{profession}</p>
-        <nav>
-          <a href="#about">About</a>
-          <a href="#about">Projects</a>
-          <a href="#about">Contact</a>
-        </nav>
+          <h1>{fullName}</h1>
+          <p>{profession}</p>
+          <nav>
+            <a href="#about">About</a>
+            <a href="#about">Projects</a>
+            <a href="#about">Contact</a>
+          </nav>
       </header>
 
       {/* about section */}
@@ -52,21 +52,26 @@ function App() {
             <div key={index} className="project-item">
               <h3>{project.title}</h3>
               <h3>{project.description}</h3>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                View Project
+              </a>
             </div>
           ))}
         </div>
       </section>
 
       {/* contact session */}
-      <section id='contact' className="contact-section">
+      <section id="contact" className="contact-section">
         <h2>Contacte me!</h2>
-        <p>If you would like to get in touch, feel free to email me at <a href="mailto:ffssyohan@gmail.com">ffssyohan@gmail.com</a></p>
+        <p>
+          If you would like to get in touch, feel free to email me at{" "}
+          <a href="mailto:ffssyohan@gmail.com">ffssyohan@gmail.com</a>
+        </p>
       </section>
 
       {/* footer section */}
       <section id="footer" className="footer-section">
-          <p>2026. All Rights Reserved.</p>
+        <p>2026. All Rights Reserved.</p>
       </section>
     </div>
   );
