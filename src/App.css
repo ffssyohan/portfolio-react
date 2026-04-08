@@ -15,12 +15,10 @@ a:hover {
 .header {
   background-color: #2f4156;
   color: white;
-
-  width: 300px;
+  text-align: center;
   padding: 20px;
 
-  margin: 20px;
-  border-radius: 10px;
+
 }
 
 .header nav a {
